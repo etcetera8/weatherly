@@ -1,5 +1,6 @@
 .display-card {
-  background: rgba(10, 40, 255, .8);
-  color: #fff;
+  background: #7CDEDC;
+  opacity: 0.9;
+  color: #F6F7EB;
   width: 100px;
 }

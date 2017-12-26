@@ -1,5 +1,5 @@
 .Cards {
   display: flex;
   justify-content: space-around;
-  background: pink;
+  background: #F6F7EB;
 }

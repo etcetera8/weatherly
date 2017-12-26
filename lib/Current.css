@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background: #F6F7EB;
+}
+
+.main-weather{
+  height: 250px;
+  width: 400px;
+  background: #7CDEDC;
+  margin: 50px auto;
+}

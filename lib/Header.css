@@ -1,3 +1,11 @@
+
 .Header {
-  
+  display: flex;
+  border:1px solid pink;
+  justify-content: space-between;
 }
+
+.Header h3 {
+  margin: 0 50px;
+}
+

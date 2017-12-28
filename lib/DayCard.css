@@ -1,0 +1,8 @@
+.DayCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #7CDEDC;
+  width: 100px;
+  height: 200px;
+}

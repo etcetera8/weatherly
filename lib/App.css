@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Ubuntu');
+
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(to bottom right, #3d7eaa, #ffe47a);
 }
+
 .App {
 }

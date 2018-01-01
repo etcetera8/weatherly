@@ -1,12 +1,12 @@
 .Cards {
   display: flex;
   justify-content: space-around;
-  background: #F6F7EB;
+  
 }
 
 .ten-day {
   display: flex;
   justify-content: space-around;
-  background: #F6F7EB;
+  
   margin-top: 50px;
 }

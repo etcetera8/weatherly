@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-weather {
+  color:white;
+  height: 250px;
+  width: 400px;
+  border: 1px solid white;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.icon {
+  margin: 25px auto;
+  display: block;
+}
+
+.curr-temp {
+  height: 25px;
+}

@@ -57,6 +57,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "@etcetera8/complete-me": "git+https://github.com/etcetera8/complete-me.git",
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
     "weather-underground-icons": "^1.0.0"

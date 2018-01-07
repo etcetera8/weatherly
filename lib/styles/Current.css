@@ -5,7 +5,7 @@
 }
 
 .main-weather {
-  color:white;
+  color: white;
   height: 250px;
   width: 400px;
   border: 1px solid white;
@@ -14,8 +14,10 @@
 }
 
 .icon {
-  margin: 25px auto;
   display: block;
+  height: 100px;
+  margin: 15px auto;
+  width: 100px;
 }
 
 .curr-temp {

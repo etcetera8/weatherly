@@ -1,10 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Ubuntu');
 
 body {
-  margin: 0;
+  width: 100%;
+  height: 1000px;
   padding: 0;
-  background: linear-gradient(to bottom right, #3d7eaa, #ffe47a);
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  
+  /* Enable GPU Rendering */
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
-.App {
+.blur {
+  /* All the background image supports */
+  transform: translate(0px, 0px, 0px);
+  background-image: -webkit-linear-gradient(bottom left, rgba(58, 198, 205, 0.7) 10%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9) 70%);
+  background-image: -moz-linear-gradient(bottom left, rgba(58, 198, 205,0.7) 10%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
+  background-image: -o-linear-gradient(bottom left, rgba(58, 198, 205, 0.7) 0%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
+  background-image: linear-gradient(to top right, rgba(58, 198, 205, 0.7) 0%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  /* blur filters */
+  -webkit-filter: blur(20px);
+  -o-filter: blur(20px);
+  filter: blur(20px);
+  
+  /* positioning and removing edges */
+  top: -70px;
+  right: -70px;
+  left: -70px;
+  padding: 70px;
+  z-index: -10;
+}
+
+.blur:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+
+  /* Setting the gradient. Adds depth, and glass like effect. */
+  background-image: -webkit-linear-gradient(289deg, rgba(43,40,50,0.1) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+  background-image: -moz-linear-gradient(289deg, rgba(43,40,50,0.1) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+  background-image: -o-linear-gradient(289deg, rgba(43,40,50,0.1) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+  background-image: linear-gradient(-19deg, rgba(43,40,50,0.1) 0%, rgba(43,40,50,0.4) 46%, rgba(0,0,0,0.05) 50%);
+
+  /* Blur to add depth. High to create smooth transition */
+  -webkit-filter: blur(90px);
+  -o-filter: blur(90px);
+  filter: blur(90px);
 }

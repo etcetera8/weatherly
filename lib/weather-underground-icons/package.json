@@ -1,0 +1,52 @@
+{
+  "_from": "weather-underground-icons",
+  "_id": "weather-underground-icons@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-FfKVGkbR3/ZIuADnrf2ArxmJoJs=",
+  "_location": "/weather-underground-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "weather-underground-icons",
+    "name": "weather-underground-icons",
+    "escapedName": "weather-underground-icons",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/weather-underground-icons/-/weather-underground-icons-1.0.0.tgz",
+  "_shasum": "15f2951a46d1dff648b800e7adfd80af1989a09b",
+  "_spec": "weather-underground-icons",
+  "_where": "/Users/amy/Turing/Mod2/projects/weatherly/lib",
+  "authors": [
+    "Ashley Jager",
+    "Peter Schmalfeldt"
+  ],
+  "bugs": {
+    "url": "https://github.com/manifestinteractive/weather-underground-icons/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Weather Underground Icons",
+  "homepage": "https://github.com/manifestinteractive/weather-underground-icons",
+  "keywords": [
+    "weather underground",
+    "weather",
+    "icons",
+    "png",
+    "svg"
+  ],
+  "license": "(MIT OR GPL-3.0)",
+  "main": "dist/wu-icons-style.css",
+  "name": "weather-underground-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manifestinteractive/weather-underground-icons.git"
+  },
+  "version": "1.0.0"
+}

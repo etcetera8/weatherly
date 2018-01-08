@@ -5,7 +5,7 @@ import Search from '../lib/Search.js'
 import 'jest-localstorage-mock';
 import mockData from '../lib/mock-data.js'
 
-describe('App', () => {
+describe.skip('App', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -23,7 +23,7 @@ describe('App', () => {
 
   it('should only render the Welcome component when nothing is in localStorage', () => {
     expect(wrapper.find('Welcome').length).toEqual(1)
-    expect(localStorage.length).toBe(0); // or check length
+    expect(localStorage.length).toBe(0);
   })
 
   it('should render the Error page when Apps state error is true or Apps response state exists', () => {
@@ -44,7 +44,7 @@ describe('App', () => {
     expect(wrapper.find('div').children().length).toEqual(3);
   })
 
-  it.only('should render Header, CurrentWeather, SevenHourForecast, and TenDayForecast if apiData is in this.state', () => {
+  it('should render Header, Current and Cards if apiData is in this.state', () => {
     localStorage.setItem('city', 'Santa Cruz, CA');
 
     wrapper.setState( { apiData: mockData } );

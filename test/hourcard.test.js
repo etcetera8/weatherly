@@ -3,12 +3,12 @@ import { mount, shallow } from 'enzyme';
 import HourCard from '../lib/HourCard.js'
 import mockData from '../lib/mock-data.js'
 
-describe.only('HourCard', () => {
+describe.skip('HourCard', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<HourCard currCondition="clear"
-                                 time="10:30"
-                                 icon="www.icon.com"
+                                  time="10:30"
+                                  icon="www.icon.com"
                      />)
     })
     

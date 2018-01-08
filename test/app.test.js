@@ -30,7 +30,6 @@ describe('App and Error', () => {
 
   it('should exist', () => {
     let wrapper = shallow(<App />)
-
     expect(wrapper).toBeDefined();
     const inst = wrapper.instance();
     localStorage.setItem('city', 'hotdog')
@@ -42,7 +41,7 @@ describe('App and Error', () => {
   })
 })
 
-describe.only('App and main app', () => {
+describe('App and main app', () => {
   let wrapper;
 
   beforeEach(() => {
@@ -53,7 +52,7 @@ describe.only('App and main app', () => {
     expect(wrapper).toBeDefined()
   })
 
-  it('should render things', () => {
+  it('should mount the divs, the header, the current card and the cards if no errors and local storage has data', () => {
     const inst = wrapper.instance();
     localStorage.setItem('city', 'Defiance, OH');
     expect(localStorage.length).toBe(1);
@@ -67,11 +66,14 @@ describe.only('App and main app', () => {
       hiLow: {low: 20, high:60},
       currDateWeather: "very sunny nice day"
     })
-    console.log(wrapper.debug())
     expect(wrapper.state().error).toEqual(false)
     expect(wrapper.find('ErrorPage').length).toEqual(0);
     expect(wrapper.find('Welcome').length).toEqual(0);
-
+    expect(wrapper.find('div').length).toEqual(2);
+    expect(wrapper.find('Header').length).toEqual(1);
+    expect(wrapper.find('Current').length).toEqual(1);
+    expect(wrapper.find('Cards').length).toEqual(1);
   })
 })
+
 })

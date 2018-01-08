@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import DayCard from '../lib/DayCard.js'
 import mockData from '../lib/mock-data.js'
 
-describe.skip('DayCard', () => {
+describe('DayCard', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<DayCard currDay="sunday"

@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import HourCard from '../lib/HourCard.js'
 import mockData from '../lib/mock-data.js'
 
-describe.skip('HourCard', () => {
+describe('HourCard', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<HourCard currCondition="clear"

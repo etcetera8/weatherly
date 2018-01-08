@@ -4,7 +4,7 @@ import Header from '../lib/Header.js'
 import mockData from '../lib/mock-data.js'
 import App from '../lib/App.js'
 
-describe.skip('Header', () => {
+describe('Header', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<Header location="Denver"

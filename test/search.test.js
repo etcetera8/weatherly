@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import Search from '../lib/Search.js'
 import mockData from '../lib/mock-data.js'
 
-describe.only('Search', () => {
+describe.skip('Search', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<Search list="suggestions" 

@@ -15,7 +15,6 @@ describe('DayCard', () => {
     
     it('should exist', () => {
       expect(wrapper).toBeDefined();
-      console.log("DayCard", wrapper.debug())
     })
 
     it('should have one section, three p tags, and an img', () => {

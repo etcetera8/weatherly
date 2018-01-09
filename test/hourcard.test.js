@@ -14,7 +14,6 @@ describe('HourCard', () => {
     
     it('should exist', () => {
       expect(wrapper).toBeDefined();
-      console.log("HourCard", wrapper.debug())
     })
 
     it('should have one article, three p tags, and an img', () => {

@@ -3,10 +3,13 @@ import { mount, shallow } from 'enzyme';
 import Cards from '../lib/Cards.js'
 import mockData from '../lib/mock-data.js'
 
-describe.skip('Cards', () => {
+describe('Cards', () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = shallow(<Cards uData={mockData} />)
+      wrapper = shallow(<Cards 
+                          hourData={mockData.hourly_forecast}
+                          dayData={mockData.forecast.simpleforecast.forecastday}
+                       />)
     })
     
     it('should exist', () => {
@@ -14,7 +17,7 @@ describe.skip('Cards', () => {
     })
 
     it('should have two divs, and two sections', () => {
-      expect(wrapper.find('div').length).toEqual(2)
+      expect(wrapper.find('div').length).toEqual(1)
       expect(wrapper.find('section').length).toEqual(2)
     })
 

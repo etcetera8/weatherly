@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import DayCard from '../lib/DayCard.js'
 import mockData from '../lib/mock-data.js'
 
-describe.skip('DayCard', () => {
+describe('DayCard', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<DayCard currDay="sunday"
@@ -15,7 +15,6 @@ describe.skip('DayCard', () => {
     
     it('should exist', () => {
       expect(wrapper).toBeDefined();
-      console.log("DayCard", wrapper.debug())
     })
 
     it('should have one section, three p tags, and an img', () => {

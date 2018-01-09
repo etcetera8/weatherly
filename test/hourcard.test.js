@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import HourCard from '../lib/HourCard.js'
 import mockData from '../lib/mock-data.js'
 
-describe.skip('HourCard', () => {
+describe('HourCard', () => {
     let wrapper;
     beforeEach(() => {
       wrapper = shallow(<HourCard currCondition="clear"
@@ -14,7 +14,6 @@ describe.skip('HourCard', () => {
     
     it('should exist', () => {
       expect(wrapper).toBeDefined();
-      console.log("HourCard", wrapper.debug())
     })
 
     it('should have one article, three p tags, and an img', () => {

@@ -6,11 +6,13 @@ import mockData from '../lib/mock-data.js'
 describe('DayCard', () => {
     let wrapper;
     beforeEach(() => {
-      wrapper = shallow(<DayCard currDay="sunday"
-                                 low="30"
-                                 high="50"
-                                 icon="www.icon.com"
-                     />)
+      wrapper = shallow(
+        <DayCard 
+          currDay="sunday"
+          low="30"
+          high="50"
+          icon="www.icon.com"
+        />)
     })
     
     it('should exist', () => {

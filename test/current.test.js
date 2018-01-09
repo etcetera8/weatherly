@@ -25,6 +25,6 @@ describe('Current', () => {
       expect(wrapper.find('main').length).toEqual(1)
       expect(wrapper.find('img').length).toEqual(1)
       expect(wrapper.find('p').length).toEqual(5)
-      expect(wrapper.find('div').length).toEqual(3)
+      expect(wrapper.find('div').length).toEqual(5)
     })
   })

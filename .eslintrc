@@ -43,7 +43,7 @@
     ],
     "max-len": [
       "error",
-      80
+      140
     ],
     "new-cap": [
       "error", {
@@ -51,10 +51,6 @@
       }
     ],
     "newline-after-var": [
-      "error",
-      "always"
-    ],
-    "object-shorthand": [
       "error",
       "always"
     ],

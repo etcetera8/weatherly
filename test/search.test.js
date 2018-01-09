@@ -43,17 +43,10 @@ describe('Search', () => {
       expect(wrapper.state().location).toEqual('for')
     })    
 
-    it('should provide a list of suggestions on input', () => {
+    it.skip('should provide a list of suggestions on input', () => {
       expect(wrapper.state().location).toEqual('');
       wrapper.find('input').simulate('change', {target: {value: 'for'}});
       expect(wrapper.find('datalist').length).toEqual(1)
       expect(wrapper.find('option').length).toEqual(7)
     })
-
-    it.skip('should make the api call on click', () => {
-      wrapper.find('input').simulate('change', {target: {value: 'for'}});
-      expect(wrapper.state().location).toEqual('for')
-      wrapper.find('button').simulate('click', { preventDefault() {} });
-    })
-
   })

@@ -49,7 +49,7 @@ body {
   filter: blur(90px);
 }
 
-.Welcome h1 {
+.welcome h1 {
   color: white;
   font-family: 'Open Sans';
   font-weight: 300;
@@ -57,7 +57,7 @@ body {
   text-align: center;
 }
 
-.Welcome .logo {
+.welcome .logo {
   text-align: center;
 }
 

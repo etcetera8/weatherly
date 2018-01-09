@@ -34,4 +34,18 @@ form {
   .logo {
     font-size: 32px;
   }
+
 }
+@media (max-width: 400px) {
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  .location {
+    text-align: center;
+    display: block;
+    margin: auto
+  }
+
+}
+

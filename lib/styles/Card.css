@@ -1,6 +1,7 @@
 .display-card {
   align-items: center;
   border: 1px solid white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;

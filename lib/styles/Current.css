@@ -13,6 +13,7 @@
   height: 250px;
   width: 400px;
   border: 1px solid white;
+  border-radius: 40px;
   margin: 50px auto;
   text-align: center;
 }
@@ -70,4 +71,6 @@ sup {
 .main-weather {
   width: 300px;
 }
+
+
 }

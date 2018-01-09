@@ -64,3 +64,9 @@ body {
   -o-filter: blur(90px);
   filter: blur(90px);
 }
+
+@media (max-width: 770px) {
+  .blur:after {
+    padding: 0;
+  }
+}

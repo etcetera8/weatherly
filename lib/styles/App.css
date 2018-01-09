@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Open-Sans:300,400,700');
+
+#app {
+  margin: auto;
+}
 
 body {
-  height: 100%;
+  /*height: 100%;*/
   padding: 0;
   position: relative;
   margin: 0;
-  overflow: show;
+  /*overflow: show;*/
   
   /* Enable GPU Rendering*/ 
-/*  -webkit-transform: translateZ(0);
+  /*  -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);*/
 }
 
 .blur {
-   All the background image supports 
+  display: inline-block;
+   /*All the background image supports */
   transform: translate(0px, 0px, 0px);
   background-image: -webkit-linear-gradient(bottom left, rgba(58, 198, 205, 0.7) 10%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9) 70%);
   background-image: -moz-linear-gradient(bottom left, rgba(58, 198, 205,0.7) 10%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
@@ -34,13 +39,16 @@ body {
   top: -70px;
   right: -70px;
   left: -70px;
-  padding: 70px;
+  padding: 60px 40px;
   z-index: -10;
 }
 
 .blur:after {
   content: '';
   position: absolute;
+  top: -70px;
+  right: -70px;
+  left: -80px;
   height: 50%;
   width: 100%;
   z-index: 1001;

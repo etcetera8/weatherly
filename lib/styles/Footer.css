@@ -1,0 +1,11 @@
+footer p {
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: center;
+}
+
+a {
+  color: #f6a71c;
+}

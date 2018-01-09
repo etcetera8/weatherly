@@ -1,5 +1,6 @@
 .Cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   
 }
@@ -18,4 +19,13 @@
 .daycard-icon {
   height: 40px;
   width: 40px;
+}
+
+h3 {
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  display: block;
+  letter-spacing: 3px;
+  text-align: center;
 }

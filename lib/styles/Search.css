@@ -12,27 +12,44 @@ form {
 
 #search {
   box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
   height: 35px;
   background: none;
   border: none;
-  border-bottom: 2px solid #ffe47a;
+  border-bottom: 2px solid #f6a71c;
   padding-bottom: 5px;
-  color: #ffe47a;
-  font-size: 20px;
+  color: #ffffff;
 }
 
 #search::placeholder {
-  color: #ffe47a;
+  color: #ffffff;
 }
 
 #search-btn {
+/*  background-color: #f6a71c;*/
+  background: none;
   font-size: 20px;
-  color: #ffe47a;
+  font-weight: 400;
+  color: #ffffff;
   box-sizing: border-box;
   margin-left: 5px;
-  border: none;
+  border: 2px solid #f6a71c;
   padding-bottom: 5px;
-  border-bottom: 2px solid #ffe47a;
-  background: none;
   height: 35px;
 }
+
+#search-btn:hover {
+  background-color: #f6a71c;
+}
+
+@media (max-width: 400px) {
+  #search {
+    font-size: 14px;
+  }
+
+  #search-btn {
+    font-size: 14px;
+  }
+}
+

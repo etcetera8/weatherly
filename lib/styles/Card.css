@@ -1,9 +1,10 @@
 .display-card {
   align-items: center;
   border: 1px solid white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   opacity: 0.9;
   padding-bottom: 20px;
   width: 120px;

@@ -12,16 +12,17 @@ button:focus {
 
 .logo {
   margin: 10px 50px 0px 0px;
-  font-size: 68px;
+  font-size: 72px;
   color: white;
   font-family: 'Oleo Script', cursive;
 }
 
 .location {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 55px 0px 0px 50px;
-  font-size: 28px;
+  font-size: 32px;
   color: white;
+  text-transform: uppercase;
 }
 
 form {
@@ -29,30 +30,22 @@ form {
   display: inline-block;
 }
 
-#search {
-  box-sizing: border-box;
-  height: 35px;
-  background: none;
-  border: none;
-  border-bottom: 2px solid #ffe47a;
-  padding-bottom: 5px;
-  color: #ffe47a;
-  font-size: 20px;
-}
+@media (max-width: 700px) {
+  .logo {
+    font-size: 32px;
+  }
 
-#search::placeholder {
-  color: #ffe47a;
 }
+@media (max-width: 400px) {
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  .location {
+    text-align: center;
+    display: block;
+    margin: auto
+  }
 
-#search-btn {
-  font-size: 20px;
-  color: #ffe47a;
-  box-sizing: border-box;
-  margin-left: 5px;
-  border: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #ffe47a;
-  background: none;
-  height: 35px;
 }
 

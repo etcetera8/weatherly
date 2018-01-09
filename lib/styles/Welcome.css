@@ -1,23 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Oleo+Script|Open-Sans:300,400,700');
-
-#app {
-  margin: auto;
-}
 body {
-  /*height: 100%;*/
+  height: 100%;
   padding: 0;
   position: relative;
   margin: 0;
-  /*overflow: show;*/
-  
-  /* Enable GPU Rendering*/ 
-  /*  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);*/
+
+
 }
 
-.blur {
+.blured {
   display: inline-block;
    /*All the background image supports */
   transform: translate(0px, 0px, 0px);
@@ -26,13 +16,8 @@ body {
   background-image: -o-linear-gradient(bottom left, rgba(58, 198, 205, 0.7) 0%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
   background-image: linear-gradient(to top right, rgba(58, 198, 205, 0.7) 0%, rgba(78,144,210, 0.9) 45%, rgba(84,129,214, 0.9)) 70%);
   position: absolute;
-  width: 100%;
-  height: 100%;
-  
-  /* blur filters 
-  -webkit-filter: blur(20px);
-  -o-filter: blur(20px);
-  filter: blur(20px);
+  width: 100vw;
+  height: 100vh;
   
   /* positioning and removing edges */
   top: -70px;
@@ -42,15 +27,14 @@ body {
   z-index: -10;
 }
 
-.blur:after {
+.blured:after {
   content: '';
   position: absolute;
   top: -70px;
   right: -70px;
-  left: -70px;
-  padding: 60px 40px;
-  height: 50%;
-  width: 100%;
+  left: -80px;
+  height: 100vh;
+  width: 100vw;
   z-index: 1001;
 
   /* Setting the gradient. Adds depth, and glass like effect. */
@@ -63,4 +47,31 @@ body {
   -webkit-filter: blur(90px);
   -o-filter: blur(90px);
   filter: blur(90px);
+}
+
+.Welcome h1 {
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.Welcome .logo {
+  text-align: center;
+}
+
+.greeting {
+  width: 400px;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+@media (max-width: 400px) {
+
+.greeting {
+  width: 300px;
+}
+
+
 }

@@ -60,13 +60,14 @@ body {
   /*letter-spacing: 3px;*/
 }
 
-
-
 .loader:empty {
   width: 3em;
   height: 3em;
   border: .5em solid #f6a71c;
   border-left: .5em solid #5578C3;
+  border-top-color: rgba(58, 198, 205, 0.7);
+  border-right-color: rgba(78,144,210, 0.9);
+  border-bottom-color: rgba(84,129,214, 0.9);
   border-radius: 50%;
   animation: load8 1.1s infinite linear;
 }

@@ -1,6 +1,8 @@
 # Weatherly
 
-- This was a pair project that me and my partner built in the span of one week. We wanted to make an application with a very clean and welcoming UI in parallel to many weather apps that are filled with clutter and tend to have lots of adds running along the borders. Upon first visit the user is greeted with a welcome page where they are prompted to choose a location. The autocomplete feature is powered by a prefix trie node package created by myself. It's filled with a default 1000 cities. After initial visit the app stores the users location. We fetch to the api weather underground to display weather data for the selected location and our animation indicates that the app is loading the location while the user waits if they are connected to slower internet connection. We built this project in the span of a week and learned a ton about react lifecycles, making fetch calls, and testing react apps.
+[Live page](http://weatherly.surge.sh/)
+
+This was a pair project that me and my partner built in the span of one week. We wanted to make an application with a very clean and welcoming UI in parallel to many weather apps that are filled with clutter and tend to have lots of adds running along the borders. Upon first visit the user is greeted with a welcome page where they are prompted to choose a location. The autocomplete feature is powered by a prefix trie node package created by myself. It's filled with a default 1000 cities. After initial visit the app stores the users location. We fetch to the api weather underground to display weather data for the selected location and our animation indicates that the app is loading the location while the user waits if they are connected to slower internet connection. We built this project in the span of a week and learned a ton about react lifecycles, making fetch calls, and testing react apps.
 
 ### The wireframe we built using Balsamiq to plan the UI
 
